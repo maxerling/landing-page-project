@@ -19,8 +19,8 @@ const HeaderText = styled.h1`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  color: #333333;
-  padding: 1em;
+  color: #000;
+  padding: 2em;
   width: 100%;
   opacity: 0.7;
 `;
@@ -31,6 +31,7 @@ const CompanyLogo = styled.img`
   justify-content: space-evenly;
   height: 10em;
   opacity: 0.7;
+  padding: 0 0 5em 0;
 `;
 
 export const CollabSection: React.FC<CollabSectionProps> = ({}) => {

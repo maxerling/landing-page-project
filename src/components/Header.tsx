@@ -7,7 +7,6 @@ interface HeaderProps {}
 
 const HeaderWrapper = styled.div`
   display: flex;
-  //width: 100%;
   height: 60px;
   padding: 0 1.5em;
   align-items: center;
