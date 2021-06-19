@@ -32,7 +32,8 @@ const Text = styled.p`
 
 export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
   return (
-    <ContentWrapper>
+    <>
+      {/*<ContentWrapper>
       <Content>
         <HeaderText>Om oss</HeaderText>
         <Text>
@@ -42,6 +43,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
           leveranser inom bestämd tidsram.
         </Text>
       </Content>
-    </ContentWrapper>
+    </ContentWrapper>*/}
+    </>
   );
 };

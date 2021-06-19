@@ -81,7 +81,8 @@ const Submit = styled.button`
 
 export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
   return (
-    <ContentWrapper>
+    <>
+      {/*<ContentWrapper>
       <Content>
         <RightSection>
           <HeaderText>Kontakta oss</HeaderText>
@@ -106,6 +107,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
           <Submit>Skicka</Submit>
         </SubmitSection>
       </Content>
-    </ContentWrapper>
+    </ContentWrapper> */}
+    </>
   );
 };

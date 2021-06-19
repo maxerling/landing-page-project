@@ -36,6 +36,8 @@ const CompanyLogo = styled.img`
 
 export const CollabSection: React.FC<CollabSectionProps> = ({}) => {
   return (
+    <>
+      {/*
     <ContentWrapper>
       <Content>
         <HeaderText>Ett fåtal företag vi sammarbetar med:</HeaderText>
@@ -46,6 +48,7 @@ export const CollabSection: React.FC<CollabSectionProps> = ({}) => {
         <CompanyLogo src={logo1} />
         <CompanyLogo src={logo1} />
       </Content>
-    </ContentWrapper>
+    </ContentWrapper>*/}
+    </>
   );
 };

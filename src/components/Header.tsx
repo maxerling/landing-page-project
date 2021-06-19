@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logob from "../imgs/mekanluft-b-logo.png";
+import logob from "../imgs/Group 3.svg";
 import { NavLink } from ".";
 
 interface HeaderProps {}
@@ -8,14 +8,18 @@ interface HeaderProps {}
 const HeaderWrapper = styled.div`
   display: flex;
   height: 60px;
-  padding: 0 1.5em;
   align-items: center;
-  background-color: #e9eaec;
-  box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+  background-color: #fff;
+  justify-content: space-between;
 `;
 
 const LeftSection = styled.div`
   display: flex;
+  margin: 16px 0 0 70px;
+
+  @media (max-width: 768px) {
+    margin: 16px 0 0 16px;
+  }
 `;
 
 const MidSection = styled.div`
@@ -25,16 +29,18 @@ const MidSection = styled.div`
 
 const RightSection = styled.div`
   display: flex;
+  margin: 16px 70px 0 0;
+
+  @media (max-width: 768px) {
+    margin: 16px 16px 0 0;
+  }
 `;
 
 const Logo = styled.img`
-  width: 120px;
-  height: auto;
-  padding: 0 0 0 2em;
   transition: transform 0.3s ease;
-
+  width: 148px;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;
 export const Header: React.FC<HeaderProps> = ({}) => {

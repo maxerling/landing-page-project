@@ -2,16 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { ServiceSection } from ".";
 import CTAImage from "../imgs/Ventilationen.jpg";
+import HeroLogo from "../imgs/Group 1.svg";
 
 interface CTASectionProps {}
 
 const ContentWrapper = styled.div`
   display: flex;
-  width: 100%;
-  background-color: #000;
+  background-color: #fff;
+
   justify-content: center;
   align-items: center;
-  height: 40em;
+  height: 803px;
   transition: all 0.45s;
 `;
 
@@ -20,28 +21,26 @@ const MainContent = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
-  color: #e9eaec;
+  color: #000;
   flex-wrap: wrap;
 `;
+
 
 const HeaderText = styled.h1`
   display: row;
   flex-direction: column;
-  padding: 0 0 2.5em 0;
+
   font-weight: 800;
-  font-size: 1.9em;
 `;
 
 const SectionText = styled.p`
   display: row;
   flex-direction: column;
-  padding: 0 0 4em 0;
-  font-size: 1.1em;
 `;
 
 const Button = styled.button`
   display: flex;
-  background-color: #fff;
+  background-color: #000;
   flex-direction: row;
   color: inherit;
   width: 12em;
@@ -52,7 +51,7 @@ const Button = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  color: #000;
+  color: #fff;
 
   &:hover {
     background-color: #000;
@@ -71,7 +70,8 @@ export const CTASection: React.FC<CTASectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <MainContent>
-        <HeaderText>Mekanluft AB - Vi ventilerar Sverige!</HeaderText>
+
+        {/*<HeaderText>Mekanluft AB - Vi ventilerar Sverige!</HeaderText>
         <SectionText>
           Vi erbjuder luftflödesmätningar och injustering av ventilation,
           OVK-besiktningar, ljudmätningar, felsökning i ventilationssystem och
@@ -82,7 +82,7 @@ export const CTASection: React.FC<CTASectionProps> = ({}) => {
         <Button>Kontakta Oss</Button>
         <ServiceSection />
         <ServiceSection />
-        <ServiceSection />
+        <ServiceSection />*/}
       </MainContent>
     </ContentWrapper>
   );
