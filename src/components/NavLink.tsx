@@ -20,9 +20,9 @@ const LinkItem = styled.li`
 const Link = styled.a`
   text-decoration: none;
   color: #000;
-  transition: all 200ms ease-in-out;
+  transition: transform 1.2s ease;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.2;
   }
 `;
 

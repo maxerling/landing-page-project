@@ -7,6 +7,7 @@ interface CollabSectionProps {}
 const ContentWrapper = styled.div`
   display: flex;
   justify-content: center;
+  background-color: #ececec;
 `;
 
 const Content = styled.div`
@@ -20,23 +21,54 @@ const HeaderText = styled.h1`
   justify-content: center;
   flex-direction: row;
   color: #000;
-  padding: 2em;
+  margin: 2em 0 2em 0;
+  opacity: 0.4;
   width: 100%;
-  opacity: 0.7;
+`;
+
+const CompanyWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 `;
 
 const CompanyLogo = styled.img`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+
   height: 10em;
-  opacity: 0.7;
-  padding: 0 0 5em 0;
+  opacity: 0.4;
+  margin: 1em;
+  @media (min-width: 959px) {
+    height: 7em;
+  }
+  @media (min-width: 1052px) {
+    height: 8em;
+  }
+  @media (min-width: 1268px) {
+    height: 9em;
+  }
+
+  @media (min-width: 1440px) {
+    height: 10em;
+  }
 `;
 
 export const CollabSection: React.FC<CollabSectionProps> = ({}) => {
   return (
     <>
+      <ContentWrapper>
+        <Content>
+          <HeaderText>Samarbeten</HeaderText>
+          <CompanyWrapper>
+            <CompanyLogo src={logo1} />
+            <CompanyLogo src={logo1} />
+            <CompanyLogo src={logo1} />
+            <CompanyLogo src={logo1} />
+          </CompanyWrapper>
+        </Content>
+      </ContentWrapper>
       {/*
     <ContentWrapper>
       <Content>

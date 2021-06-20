@@ -1,5 +1,12 @@
 import React from "react";
-import { CTASection, CollabSection, ContactSection, FAQSection, AboutSection } from ".";
+import {
+  CTASection,
+  CollabSection,
+  ContactSection,
+  FAQSection,
+  AboutSection,
+  ServiceSection,
+} from ".";
 
 interface ContentProps {}
 
@@ -8,6 +15,7 @@ export const Content: React.FC<ContentProps> = ({}) => {
     <>
       <CTASection />
       <CollabSection />
+      <ServiceSection />
       <AboutSection />
       <ContactSection />
       <FAQSection />

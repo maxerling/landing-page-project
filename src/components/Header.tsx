@@ -37,10 +37,10 @@ const RightSection = styled.div`
 `;
 
 const Logo = styled.img`
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   width: 148px;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `;
 export const Header: React.FC<HeaderProps> = ({}) => {

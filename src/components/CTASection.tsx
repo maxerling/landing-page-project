@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ServiceSection } from ".";
 import CTAImage from "../imgs/Ventilationen.jpg";
-import HeroLogo from "../imgs/Group 1.svg";
+import BigLogo from "../imgs/Group 1.svg";
 
 interface CTASectionProps {}
 
@@ -12,39 +12,88 @@ const ContentWrapper = styled.div`
 
   justify-content: center;
   align-items: center;
-  height: 803px;
+  height: 600px;
   transition: all 0.45s;
+
+  @media (min-width: 768px) {
+    height: 800px;
+  }
 `;
 
 const MainContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   color: #000;
   flex-wrap: wrap;
 `;
 
+const HeroLogo = styled.img`
+  display: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1.2s ease;
+  &:hover {
+    transform: rotate(360deg);
+  }
+`;
 
 const HeaderText = styled.h1`
   display: row;
   flex-direction: column;
-
   font-weight: 800;
+  font-size: 2.074rem;
+  text-align: center;
+  font-variant: small-caps;
+  width: 100%;
+  margin: 40px 0 0 0;
+  word-wrap: break-word;
+
+  @media (min-width: 425px) {
+    font-size: 2.488rem;
+  }
 `;
 
 const SectionText = styled.p`
   display: row;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 4px 0 0 0;
+  font-size: 1rem;
+
+  @media (min-width: 425px) {
+    font-size: 1.2rem;
+  }
 `;
 
-const Button = styled.button`
+const ButtonWrapper = styled.div`
   display: flex;
-  background-color: #000;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 24px 0 0 0;
+  @media (min-width: 426px) {
+    width: 80%;
+  }
+
+  @media (min-width: 892px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1260px) {
+    width: 40%;
+  }
+`;
+
+const Button = styled.button<{ color?: string; activeColor?: string }>`
+  display: flex;
+  background-color: ${(props) => {
+    return props.color;
+  }};
   flex-direction: row;
-  color: inherit;
-  width: 12em;
-  height: 3em;
+  width: 8em;
+  height: 4em;
   justify-content: center;
   align-items: center;
   font-weight: 800;
@@ -52,17 +101,32 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   color: #fff;
+  transition: transform 0.5s ease;
+  font-weight: 800;
+  font-size: 1rem;
 
   &:hover {
-    background-color: #000;
-    border: solid 2px #fff;
-    color: #fff;
+    transform: scale(1.1);
   }
 
   &:active {
-    background-color: #fff;
-    border: none;
-    color: #000;
+    color: #e9e8e8;
+    background-color: ${(props) => {
+      return props.activeColor;
+    }};
+  }
+
+  @media (min-width: 600px) {
+    width: 10em;
+    height: 3em;
+  }
+
+  @media (min-width: 1025px) {
+    margin: 32px 0 0 0;
+  }
+
+  @media (min-width: 1260px) {
+    width: 13em;
   }
 `;
 
@@ -70,7 +134,17 @@ export const CTASection: React.FC<CTASectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <MainContent>
-
+        <HeroLogo src={BigLogo}></HeroLogo>
+        <HeaderText>Vi Ventilerar Sverige!</HeaderText>
+        <SectionText>Andas ut och få ventilationen ordnad! </SectionText>
+        <ButtonWrapper>
+          <Button color="#1E6AFF" activeColor="#1a51be">
+            Kontakta Oss
+          </Button>
+          <Button color="#EEC800" activeColor="#c7a601">
+            Våra Tjänster
+          </Button>
+        </ButtonWrapper>
         {/*<HeaderText>Mekanluft AB - Vi ventilerar Sverige!</HeaderText>
         <SectionText>
           Vi erbjuder luftflödesmätningar och injustering av ventilation,
