@@ -3,13 +3,11 @@ import styled from "styled-components";
 
 interface ServiceSectionProps {}
 
-const ContnetWrapper = styled.div`
+const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: #eec800;
 `;
-
-const Text = styled.h2``;
 
 const HeaderText = styled.h1`
   display: flex;
@@ -52,7 +50,7 @@ const ServiceText = styled.p`
 //flex: 1 0 21%; /* explanation below */
 export const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
   return (
-    <ContnetWrapper>
+    <ContentWrapper>
       <HeaderText>Tjänster</HeaderText>
       <ServiceWrapper>
         <ServiceText>felsökning ventilationsystem</ServiceText>
@@ -62,6 +60,6 @@ export const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
         <ServiceText>luftflödesmätning</ServiceText>
         <ServiceText>ljudmätning</ServiceText>
       </ServiceWrapper>
-    </ContnetWrapper>
+    </ContentWrapper>
   );
 };
