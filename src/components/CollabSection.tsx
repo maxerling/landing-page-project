@@ -21,7 +21,7 @@ const HeaderText = styled.h1`
   justify-content: center;
   flex-direction: row;
   color: #000;
-  margin: 2em 0 2em 0;
+  margin: 24px 0 24px 0;
   opacity: 0.4;
   width: 100%;
 `;
