@@ -37,7 +37,7 @@ const ServiceText = styled.p`
   font-variant: small-caps;
   box-sizing: border-box;
   border: solid 4px black;
-  width: 3gi00px;
+  width: 300px;
   height: 300px;
   font-size: 1.728rem;
   line-height: 1;
