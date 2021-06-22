@@ -8,6 +8,7 @@ const ContentWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: #ececec;
+  padding: 0 0 70px 0;
 `;
 
 const Content = styled.div`

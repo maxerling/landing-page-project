@@ -6,6 +6,7 @@ interface AboutSectionProps {}
 const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding: 0 0 70px 70px;
 `;
 
 const HeaderText = styled.h1`
@@ -19,13 +20,23 @@ const HeaderText = styled.h1`
 
 const Text = styled.p`
   display: flex;
+  font-size: 1.728rem;
+  overflow-wrap: break-word;
+  width: 40%;
+  text-align: left;
+  line-height: 1.7;
 `;
 
 export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <HeaderText>Om Oss</HeaderText>
-      
+      <Text>
+        Mekanluft grundandes 2018 av Salar Khosro och Jerry Erling. Vi erbjuder
+        injustering av ventilation och OVK-besiktningar. Med lång erfarenhet och
+        bred kompetens kan vi garantera väl genomförda leveranser inom bestämd
+        tidsram.
+      </Text>
       {/*<ContentWrapper>
       <Content>
         <HeaderText>Om oss</HeaderText>

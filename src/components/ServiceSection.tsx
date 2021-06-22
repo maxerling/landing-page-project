@@ -7,6 +7,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: #eec800;
+  padding: 0 0 70px 0;
 `;
 
 const HeaderText = styled.h1`

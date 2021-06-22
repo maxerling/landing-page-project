@@ -9,7 +9,6 @@ interface CTASectionProps {}
 const ContentWrapper = styled.div`
   display: flex;
   background-color: #fff;
-
   justify-content: center;
   align-items: center;
   height: 600px;
