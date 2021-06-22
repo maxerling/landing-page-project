@@ -13,15 +13,19 @@ const HeaderText = styled.h1`
   width: 100%;
   flex-direction: row;
   width: 100%;
-
   margin: 40px 0 40px 0;
   font-weight: 600;
+`;
+
+const Text = styled.p`
+  display: flex;
 `;
 
 export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <HeaderText>Om Oss</HeaderText>
+      
       {/*<ContentWrapper>
       <Content>
         <HeaderText>Om oss</HeaderText>
