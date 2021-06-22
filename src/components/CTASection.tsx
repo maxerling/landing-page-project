@@ -144,18 +144,6 @@ export const CTASection: React.FC<CTASectionProps> = ({}) => {
             Våra Tjänster
           </Button>
         </ButtonWrapper>
-        {/*<HeaderText>Mekanluft AB - Vi ventilerar Sverige!</HeaderText>
-        <SectionText>
-          Vi erbjuder luftflödesmätningar och injustering av ventilation,
-          OVK-besiktningar, ljudmätningar, felsökning i ventilationssystem och
-          utredningar. Med lång erfarenhet och bred kompetens inom
-          ventilationsbranschen kan vi garantera väl genomförda leveranser inom
-          bestämd tidsram.
-        </SectionText>
-        <Button>Kontakta Oss</Button>
-        <ServiceSection />
-        <ServiceSection />
-        <ServiceSection />*/}
       </MainContent>
     </ContentWrapper>
   );

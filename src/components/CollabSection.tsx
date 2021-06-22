@@ -59,30 +59,16 @@ const CompanyLogo = styled.img`
 
 export const CollabSection: React.FC<CollabSectionProps> = ({}) => {
   return (
-    <>
-      <ContentWrapper>
-        <Content>
-          <HeaderText>Samarbeten</HeaderText>
-          <CompanyWrapper>
-            <CompanyLogo src={logo1} />
-            <CompanyLogo src={logo1} />
-            <CompanyLogo src={logo1} />
-            <CompanyLogo src={logo1} />
-          </CompanyWrapper>
-        </Content>
-      </ContentWrapper>
-      {/*
     <ContentWrapper>
       <Content>
-        <HeaderText>Ett fåtal företag vi sammarbetar med:</HeaderText>
-        <CompanyLogo src={logo1} />
-        <CompanyLogo src={logo1} />
-        <CompanyLogo src={logo1} />
-        <CompanyLogo src={logo1} />
-        <CompanyLogo src={logo1} />
-        <CompanyLogo src={logo1} />
+        <HeaderText>Samarbeten</HeaderText>
+        <CompanyWrapper>
+          <CompanyLogo src={logo1} />
+          <CompanyLogo src={logo1} />
+          <CompanyLogo src={logo1} />
+          <CompanyLogo src={logo1} />
+        </CompanyWrapper>
       </Content>
-    </ContentWrapper>*/}
-    </>
+    </ContentWrapper>
   );
 };
