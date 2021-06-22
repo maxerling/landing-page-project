@@ -5,83 +5,24 @@ interface ContactSectionProps {}
 
 const ContentWrapper = styled.div`
   display: flex;
-  background: #fff;
-  width: 100%;
-  justify-content: center;
-  height: 50em;
-`;
-
-const Content = styled.div`
-  display: flex;
-  color: #000;
   flex-wrap: wrap;
-  width: 40em;
-`;
-
-const RightSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-`;
-
-const MidSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 30%;
-  height: 25%;
-`;
-
-const LeftSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-`;
-
-const SubmitSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 1em;
+  background-color: #1e6aff;
 `;
 
 const HeaderText = styled.h1`
   display: flex;
-  padding: 2em 0 0 0;
-`;
-
-const Input = styled.input`
-  display: flex;
+  width: 100%;
   flex-direction: row;
-`;
-
-const Label = styled.label`
-  display: flex;
-  font-weight: bold;
-  flex-direction: row;
-`;
-
-const TextArea = styled.textarea`
-  display: flex;
-  flex-direction: row;
-  resize: none;
-  width: 40em;
-  height: 8em;
-`;
-
-const Submit = styled.button`
-  width: 8em;
-  height: 2.5em;
-  margin: 3em 0 0 0;
-  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin: 40px 0 40px 0;
+  font-weight: 600;
 `;
 
 export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
   return (
-    <>
+    <ContentWrapper>
+      <HeaderText>Kontakta Oss</HeaderText>
       {/*<ContentWrapper>
       <Content>
         <RightSection>
@@ -108,6 +49,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
         </SubmitSection>
       </Content>
     </ContentWrapper> */}
-    </>
+    </ContentWrapper>
   );
 };

@@ -5,34 +5,23 @@ interface AboutSectionProps {}
 
 const ContentWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 20em;
-  background: #000;
-`;
-
-const Content = styled.div`
-  display: flex;
   flex-wrap: wrap;
-  color: #fff;
 `;
 
 const HeaderText = styled.h1`
   display: flex;
+  width: 100%;
   flex-direction: row;
   width: 100%;
-  align-items: center;
-`;
 
-const Text = styled.p`
-  display: flex;
-  flex-direction: row;
-  width: 15em;
+  margin: 40px 0 40px 0;
+  font-weight: 600;
 `;
 
 export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
   return (
-    <>
+    <ContentWrapper>
+      <HeaderText>Om Oss</HeaderText>
       {/*<ContentWrapper>
       <Content>
         <HeaderText>Om oss</HeaderText>
@@ -44,6 +33,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
         </Text>
       </Content>
     </ContentWrapper>*/}
-    </>
+    </ContentWrapper>
   );
 };

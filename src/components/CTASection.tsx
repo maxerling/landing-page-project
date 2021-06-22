@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ServiceSection } from ".";
 import CTAImage from "../imgs/Ventilationen.jpg";
-import BigLogo from "../imgs/Group 1.svg";
+import BigLogo from "../imgs/Group 19.svg";
 
 interface CTASectionProps {}
 
