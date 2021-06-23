@@ -198,33 +198,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
           <Button>Skicka</Button>
         </LowSection>
       </MidSection>
-
-      {/*<ContentWrapper>
-      <Content>
-        <RightSection>
-          <HeaderText>Kontakta oss</HeaderText>
-        </RightSection>
-        <MidSection>
-          <Label>Förnamn</Label>
-          <Input />
-          <Label>Efterman</Label>
-          <Input />
-          <Label>Telefonnummer</Label>
-          <Input />
-          <Label>E-post</Label>
-          <Input />
-          <Label>Ämne</Label>
-          <Input />
-        </MidSection>
-        <LeftSection>
-          <Label>Meddelande</Label>
-          <TextArea></TextArea>
-        </LeftSection>
-        <SubmitSection>
-          <Submit>Skicka</Submit>
-        </SubmitSection>
-      </Content>
-    </ContentWrapper> */}
     </ContentWrapper>
   );
 };
