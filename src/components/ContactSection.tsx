@@ -20,10 +20,175 @@ const HeaderText = styled.h1`
   font-weight: 600;
 `;
 
+const Label = styled.p`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.25rem;
+`;
+
+const RequirimentStyle = styled.div`
+  color: #fa3d3e;
+  margin: 0 0 0 4px;
+`;
+
+const Input = styled.input`
+  display: flex;
+  flex-direction: row;
+  width: 17em;
+  border: none;
+  border-radius: 3px;
+  margin: 0 16px 32px 0;
+  height: 32px;
+
+  @media (min-width: 373px) {
+    width: 20em;
+  }
+
+  @media (min-width: 447px) {
+    width: 24em;
+  }
+`;
+
+const TextArea = styled.textarea`
+  display: flex;
+  border: none;
+  border-radius: 3px;
+  margin: 0 0 40px 0;
+  resize: none;
+  width: 16em;
+  height: 16em;
+
+  @media (min-width: 373px) {
+    width: 20em;
+  }
+
+  @media (min-width: 447px) {
+    width: 24em;
+  }
+
+  @media (min-width: 691px) {
+    width: 44em;
+  }
+
+  @media (min-width: 1100px) {
+    width: 57em;
+  }
+
+  @media (min-width: 1380px) {
+    width: 58em;
+  }
+`;
+
+const Description = styled.p`
+  display: flex;
+  
+`;
+
+const ErrorMessage = styled.p`
+  display: flex;
+  color: #fa3d3e;
+  background-color: #ffe0e0;
+`;
+
+const FieldWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex: column;
+  justify-content: start;
+  margin: 0 0 0 0;
+`;
+
+const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: #eec800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.563rem;
+  height: 1.5em;
+  width: 5.5em;
+  cursor: pointer;
+
+  &:hover {
+    border: solid 2px white;
+  }
+
+  &:active {
+    color: #e9e8e8;
+    background-color: #c7a601;
+    border: none;
+  }
+`;
+
+const TopSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
+`;
+
+const MidSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
+`;
+
+const LowSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
+`;
+
 export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <HeaderText>Kontakta Oss</HeaderText>
+      <TopSection>
+        <FieldWrapper>
+          <Label>
+            Förnamn<RequirimentStyle>*</RequirimentStyle>
+          </Label>
+          <Input />
+        </FieldWrapper>
+        <FieldWrapper>
+          <Label>
+            Efternamn<RequirimentStyle>*</RequirimentStyle>
+          </Label>
+          <Input />
+        </FieldWrapper>
+        <FieldWrapper>
+          <Label>
+            Nummer<RequirimentStyle>*</RequirimentStyle>
+          </Label>
+          <Input />
+        </FieldWrapper>
+        <FieldWrapper>
+          <Label>
+            E-post<RequirimentStyle>*</RequirimentStyle>
+          </Label>
+          <Input />
+        </FieldWrapper>
+      </TopSection>
+      <MidSection>
+        <FieldWrapper>
+          <Label>Meddelande</Label>
+          <TextArea />
+        </FieldWrapper>
+        <LowSection>
+          <Button>Skicka</Button>
+        </LowSection>
+      </MidSection>
+
       {/*<ContentWrapper>
       <Content>
         <RightSection>
