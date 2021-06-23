@@ -24,6 +24,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({}) => {
   return (
     <ContentWrapper>
       <HeaderText>FAQ</HeaderText>
+      
     </ContentWrapper>
   );
 };
