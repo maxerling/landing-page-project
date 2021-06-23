@@ -83,13 +83,19 @@ const TextArea = styled.textarea`
 
 const Description = styled.p`
   display: flex;
-  
 `;
 
 const ErrorMessage = styled.p`
   display: flex;
+  flex-direction: row;
   color: #fa3d3e;
   background-color: #ffe0e0;
+  width: 13em;
+  height: 2.7em;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 `;
 
 const FieldWrapper = styled.div`
@@ -159,24 +165,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
             Förnamn<RequirimentStyle>*</RequirimentStyle>
           </Label>
           <Input />
+          <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
         </FieldWrapper>
         <FieldWrapper>
           <Label>
             Efternamn<RequirimentStyle>*</RequirimentStyle>
           </Label>
           <Input />
+          <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
         </FieldWrapper>
         <FieldWrapper>
           <Label>
             Nummer<RequirimentStyle>*</RequirimentStyle>
           </Label>
           <Input />
+          <ErrorMessage>Ange ett giltigt nummer, försök igen!</ErrorMessage>
         </FieldWrapper>
         <FieldWrapper>
           <Label>
             E-post<RequirimentStyle>*</RequirimentStyle>
           </Label>
           <Input />
+          <ErrorMessage>Ange en giltig e-post, försök igen!</ErrorMessage>
         </FieldWrapper>
       </TopSection>
       <MidSection>
