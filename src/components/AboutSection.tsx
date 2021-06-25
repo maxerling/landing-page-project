@@ -24,11 +24,11 @@ const Text = styled.p`
   overflow-wrap: break-word;
   width: 80%;
   text-align: left;
-  line-height: 1.7;
+  line-height: 1.9;
 
   @media (min-width: 1272px) {
-    font-size: 1.728rem;
-    width: 60%;
+    font-size: 1.563rem;
+    width: 600px;
   }
 `;
 

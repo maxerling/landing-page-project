@@ -38,8 +38,8 @@ const Input = styled.input`
   flex-direction: row;
   width: 17em;
   border: none;
-  border-radius: 3px;
-  margin: 0 16px 32px 0;
+  border-radius: 2px;
+  margin: 0 26px 32px 0;
   height: 32px;
 
   @media (min-width: 373px) {
@@ -54,7 +54,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   display: flex;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 0 0 40px 0;
   resize: none;
   width: 16em;
@@ -96,6 +96,7 @@ const ErrorMessage = styled.p`
   align-items: center;
   justify-content: center;
   padding: 10px;
+  font-size: 0.8rem;
 `;
 
 const FieldWrapper = styled.div`
@@ -103,7 +104,7 @@ const FieldWrapper = styled.div`
   flex-wrap: wrap;
   flex: column;
   justify-content: start;
-  margin: 0 0 0 0;
+  width: 100%;
 `;
 
 const Button = styled.button`
@@ -116,8 +117,8 @@ const Button = styled.button`
   border: none;
   border-radius: 8px;
   font-size: 1.563rem;
-  height: 1.5em;
-  width: 5.5em;
+  height: 2em;
+  width: 7em;
   cursor: pointer;
 
   &:hover {
@@ -151,53 +152,131 @@ const LowSection = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: start;
 `;
 
+const Submit = (e: any) => {
+  e.preventDefault();
+};
+
 export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
+  const LabelNames = ["Förnamn", "Efternamn", "Telefonnummer", "E-post"];
+  const ErrorMessages = [
+    "Fältet får inte vara tomt, försök igen!",
+    "Fältet får inte vara tomt, försök igen!",
+    "Ange ett giltigt nummer, försök igen!",
+    "Ange en giltig e-post, försök igen!",
+  ];
+
+  const ErrorAndLabels = [
+    { label: "Förnamn", error: "Fältet får inte vara tomt, försök igen!" },
+    { label: "Efternamn", error: "Fältet får inte vara tomt, försök igen!" },
+    { label: "Telefonnummer", error: "Ange ett giltigt nummer, försök igen!" },
+    { label: "E-post", error: "Ange en giltig e-post, försök igen!" },
+  ];
+
+  const FieldMapping = ErrorAndLabels.map((defualt) => {
+    return (
+      <>
+        <Label>
+          {defualt.label}
+          <RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>{defualt.error}</ErrorMessage>
+      </>
+    );
+  });
+
   return (
     <ContentWrapper>
       <HeaderText>Kontakta Oss</HeaderText>
-      <TopSection>
-        <FieldWrapper>
-          <Label>
-            Förnamn<RequirimentStyle>*</RequirimentStyle>
-          </Label>
-          <Input />
-          <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
-        </FieldWrapper>
-        <FieldWrapper>
-          <Label>
-            Efternamn<RequirimentStyle>*</RequirimentStyle>
-          </Label>
-          <Input />
-          <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
-        </FieldWrapper>
-        <FieldWrapper>
-          <Label>
-            Nummer<RequirimentStyle>*</RequirimentStyle>
-          </Label>
-          <Input />
-          <ErrorMessage>Ange ett giltigt nummer, försök igen!</ErrorMessage>
-        </FieldWrapper>
-        <FieldWrapper>
-          <Label>
-            E-post<RequirimentStyle>*</RequirimentStyle>
-          </Label>
-          <Input />
-          <ErrorMessage>Ange en giltig e-post, försök igen!</ErrorMessage>
-        </FieldWrapper>
-      </TopSection>
-      <MidSection>
+
+      <form onSubmit={Submit}>
+        {FieldMapping}
+
         <FieldWrapper>
           <Label>Meddelande</Label>
           <TextArea />
         </FieldWrapper>
+
         <LowSection>
           <Button>Skicka</Button>
         </LowSection>
-      </MidSection>
+      </form>
     </ContentWrapper>
   );
 };
+
+{
+  /*<Label>
+          Förnamn<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
+
+        <Label>
+          Efternamn<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
+
+        <Label>
+          Nummer<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>Ange ett giltigt nummer, försök igen!</ErrorMessage>
+
+        <Label>
+          E-post<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>Ange en giltig e-post, försök igen!</ErrorMessage>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          const ErrorMessageMapping = (
+    ErrorMessages: string[],
+    LabelNames: string[]
+  ) => {
+    ErrorMessages.map((errorMessage) => {
+      LabelNames.map((labelName) => {
+        LabelMapping(errorMessage, labelName);
+      });
+    });
+  };
+
+  const LabelMapping = (errorMessage: string, labelName: string) => {
+    return (
+      <>
+        <Label>
+          {labelName}
+          <RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input />
+        <ErrorMessage>{errorMessage}</ErrorMessage>
+      </>
+    );
+  };
+        
+        
+        */
+}
