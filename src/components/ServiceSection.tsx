@@ -51,7 +51,7 @@ const ServiceText = styled.p`
 //flex: 1 0 21%; /* explanation below */
 export const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
   return (
-    <ContentWrapper>
+    <ContentWrapper id="services">
       <HeaderText>Tjänster</HeaderText>
       <ServiceWrapper>
         <ServiceText>felsökning ventilationsystem</ServiceText>

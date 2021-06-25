@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 interface NavLinkProps {}
 
@@ -17,7 +18,16 @@ const LinkItem = styled.li`
   justify-content: center;
 `;
 
-const Link = styled.a`
+const Link2 = styled.a`
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
+`;
+
+const AnchorLinkStyled = styled(AnchorLink)`
   text-decoration: none;
   color: #000;
   transition: 0.3s;
@@ -31,7 +41,7 @@ export const NavLink: React.FC<NavLinkProps> = ({}) => {
     <NavLinkContainer>
       <LinkWrapper>
         <LinkItem>
-          <Link href="#">Om oss</Link>
+          <AnchorLinkStyled href="#about">Om oss</AnchorLinkStyled>
         </LinkItem>
       </LinkWrapper>
     </NavLinkContainer>

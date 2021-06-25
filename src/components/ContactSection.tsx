@@ -39,7 +39,7 @@ const Input = styled.input`
   width: 17em;
   border: none;
   border-radius: 2px;
-  margin: 0 26px 32px 0;
+  margin: 0 18px 32px 0;
   height: 32px;
 
   @media (min-width: 373px) {
@@ -189,7 +189,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
   });
 
   return (
-    <ContentWrapper>
+    <ContentWrapper id="contact">
       <HeaderText>Kontakta Oss</HeaderText>
 
       <form onSubmit={Submit}>

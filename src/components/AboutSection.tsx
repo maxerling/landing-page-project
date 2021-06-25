@@ -34,7 +34,7 @@ const Text = styled.p`
 
 export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
   return (
-    <ContentWrapper>
+    <ContentWrapper id="about">
       <HeaderText>Om Oss</HeaderText>
       <Text>
         Mekanluft grundandes 2018 av Salar Khosro och Jerry Erling. Vi erbjuder

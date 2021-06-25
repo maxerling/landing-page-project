@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ServiceSection } from ".";
 import CTAImage from "../imgs/Ventilationen.jpg";
 import BigLogo from "../imgs/Group 19.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 interface CTASectionProps {}
 
@@ -129,6 +130,13 @@ const Button = styled.button<{ color?: string; activeColor?: string }>`
   }
 `;
 
+const AnchorLinkStyled = styled(AnchorLink)`
+  color: #fff;
+  text-decoration: none;
+`;
+
+//const AnchorLink = styled.a``;
+
 export const CTASection: React.FC<CTASectionProps> = ({}) => {
   return (
     <ContentWrapper>
@@ -137,12 +145,16 @@ export const CTASection: React.FC<CTASectionProps> = ({}) => {
         <HeaderText>Vi Ventilerar Sverige!</HeaderText>
         <SectionText>Andas ut och få ventilationen ordnad! </SectionText>
         <ButtonWrapper>
-          <Button color="#1E6AFF" activeColor="#1a51be">
-            Kontakta Oss
-          </Button>
-          <Button color="#EEC800" activeColor="#c7a601">
-            Våra Tjänster
-          </Button>
+          <AnchorLinkStyled href="#contact">
+            <Button color="#1E6AFF" activeColor="#1a51be">
+              Kontakta Oss
+            </Button>
+          </AnchorLinkStyled>
+          <AnchorLinkStyled href="#services">
+            <Button color="#EEC800" activeColor="#c7a601">
+              Våra Tjänster
+            </Button>
+          </AnchorLinkStyled>
         </ButtonWrapper>
       </MainContent>
     </ContentWrapper>
