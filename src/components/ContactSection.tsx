@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useForm, NestedValue } from "react-hook-form";
+import { ContactForm } from ".";
 
 interface ContactSectionProps {}
 
@@ -95,7 +97,7 @@ const ErrorMessage = styled.p`
   font-weight: 600;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 1.3em;
   font-size: 0.8rem;
 `;
 
@@ -159,45 +161,104 @@ const Submit = (e: any) => {
   e.preventDefault();
 };
 
+type FormData = {
+  firstName: string;
+  lastName: string;
+  number: string;
+  email: string;
+  message: string;
+};
+
 export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
-  const LabelNames = ["Förnamn", "Efternamn", "Telefonnummer", "E-post"];
-  const ErrorMessages = [
-    "Fältet får inte vara tomt, försök igen!",
-    "Fältet får inte vara tomt, försök igen!",
-    "Ange ett giltigt nummer, försök igen!",
-    "Ange en giltig e-post, försök igen!",
-  ];
-
-  const ErrorAndLabels = [
-    { label: "Förnamn", error: "Fältet får inte vara tomt, försök igen!" },
-    { label: "Efternamn", error: "Fältet får inte vara tomt, försök igen!" },
-    { label: "Telefonnummer", error: "Ange ett giltigt nummer, försök igen!" },
-    { label: "E-post", error: "Ange en giltig e-post, försök igen!" },
-  ];
-
-  const FieldMapping = ErrorAndLabels.map((defualt) => {
-    return (
-      <>
-        <Label>
-          {defualt.label}
-          <RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>{defualt.error}</ErrorMessage>
-      </>
-    );
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
+  const onSubmit = (data: object) => console.log(data);
 
   return (
     <ContentWrapper id="contact">
       <HeaderText>Kontakta Oss</HeaderText>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <Label>
+          Förnamn<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input
+          type="text"
+          {...register(`firstName`, {
+            required: "Fältet får inte vara tomt, försök igen!",
+          })}
+        />
+        {errors.firstName && (
+          <ErrorMessage>{errors.firstName.message}</ErrorMessage>
+        )}
 
-      <form onSubmit={Submit}>
-        {FieldMapping}
+        <Label>
+          Efternamn<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input
+          type="text"
+          {...register(`lastName`, {
+            required: "Fältet får inte vara tomt, försök igen!",
+          })}
+        />
+        {errors.lastName && (
+          <ErrorMessage>{errors.lastName.message}</ErrorMessage>
+        )}
+
+        <Label>
+          Telefonnummer<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input
+          type="tel"
+          {...register(`number`, {
+            required: "Fältet får inte vara tomt, försök igen!",
+            minLength: {
+              value: 10,
+              message: "Ange ett giltigt nummer, försök igen!",
+            },
+            maxLength: {
+              value: 12,
+              message: "Ange ett giltigt nummer, försök igen!",
+            },
+            pattern: {
+              value: /[0-9+]/,
+              message: "Ange endast siffror, försök igen!",
+            },
+          })}
+        />
+
+        {errors.number && <ErrorMessage>{errors.number.message}</ErrorMessage>}
+
+        <Label>
+          E-post<RequirimentStyle>*</RequirimentStyle>
+        </Label>
+        <Input
+          type="text"
+          {...register(`email`, {
+            required: "Fältet får inte vara tomt, försök igen!",
+            pattern: {
+              value: /@/,
+              message: "E-post måste innehålla @, försök igen!",
+            },
+            maxLength: {
+              value: 254,
+              message:
+                "Ange en e-post med ett mindre antal karaktärer, försök igen!",
+            },
+            minLength: {
+              value: 3,
+              message:
+                "Ange en e-post med ett större antal karaktärer, försök igen!",
+            },
+          })}
+        />
+        {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
 
         <FieldWrapper>
           <Label>Meddelande</Label>
-          <TextArea />
+          <TextArea {...register(`message`)} />
         </FieldWrapper>
 
         <LowSection>
