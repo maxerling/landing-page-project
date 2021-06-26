@@ -16,7 +16,7 @@ const ContentWrapper = styled.div`
   transition: all 0.45s;
 
   @media (min-width: 768px) {
-    height: 800px;
+    height: 1200px;
   }
 `;
 
@@ -33,9 +33,14 @@ const HeroLogo = styled.img`
   display: row;
   justify-content: center;
   align-items: center;
+
   transition: transform 1.2s ease;
   &:hover {
     transform: rotate(360deg);
+  }
+
+  @media (min-width: 1078px) {
+    width: 24em;
   }
 `;
 
@@ -53,6 +58,10 @@ const HeaderText = styled.h1`
   @media (min-width: 425px) {
     font-size: 2.488rem;
   }
+
+  @media (min-width: 1078px) {
+    font-size: 3.052rem;
+  }
 `;
 
 const SectionText = styled.p`
@@ -66,6 +75,10 @@ const SectionText = styled.p`
   @media (min-width: 425px) {
     font-size: 1.2rem;
   }
+
+  @media (min-width: 1078px) {
+    font-size: 1.563rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -78,11 +91,7 @@ const ButtonWrapper = styled.div`
   }
 
   @media (min-width: 892px) {
-    width: 60%;
-  }
-
-  @media (min-width: 1260px) {
-    width: 40%;
+    width: 55%;
   }
 `;
 
@@ -125,8 +134,10 @@ const Button = styled.button<{ color?: string; activeColor?: string }>`
     margin: 32px 0 0 0;
   }
 
-  @media (min-width: 1260px) {
+  @media (min-width: 1078px) {
     width: 13em;
+    height: 3em;
+    font-size: 1.25rem;
   }
 `;
 
