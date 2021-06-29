@@ -37,7 +37,7 @@ I decided to inspect other websites to get a better understanding what could be 
 
 So I decided first to do everything off the cuff. Even though I was able to 'make out' all the key components, didn't really like the style or structure of the website (check picture below). 
 
-![image](https://user-images.githubusercontent.com/50410315/123867967-5bb1c780-d92f-11eb-930b-f2ca674c28c2.png)
+https://i.imgur.com/6ATCkjG.png
 
 I decided to re-create the project with Figma combined with looking up tutorials to get a better understanding of styling (check link below).
 
