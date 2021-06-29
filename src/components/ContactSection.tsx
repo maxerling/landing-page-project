@@ -82,10 +82,6 @@ const TextArea = styled.textarea`
   }
 `;
 
-const Description = styled.p`
-  display: flex;
-`;
-
 const ErrorMessage = styled.p`
   display: flex;
   flex-direction: row;
@@ -133,32 +129,12 @@ const Button = styled.button`
   }
 `;
 
-const TopSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: start;
-`;
-
-const MidSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: start;
-`;
-
 const LowSection = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
 `;
-
-const Submit = (e: any) => {
-  e.preventDefault();
-};
 
 type FormData = {
   firstName: string;
@@ -267,76 +243,3 @@ export const ContactSection: React.FC<ContactSectionProps> = () => {
     </ContentWrapper>
   );
 };
-
-{
-  /*<Label>
-          Förnamn<RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
-
-        <Label>
-          Efternamn<RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>Fältet får inte vara tomt, försök igen!</ErrorMessage>
-
-        <Label>
-          Nummer<RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>Ange ett giltigt nummer, försök igen!</ErrorMessage>
-
-        <Label>
-          E-post<RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>Ange en giltig e-post, försök igen!</ErrorMessage>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          const ErrorMessageMapping = (
-    ErrorMessages: string[],
-    LabelNames: string[]
-  ) => {
-    ErrorMessages.map((errorMessage) => {
-      LabelNames.map((labelName) => {
-        LabelMapping(errorMessage, labelName);
-      });
-    });
-  };
-
-  const LabelMapping = (errorMessage: string, labelName: string) => {
-    return (
-      <>
-        <Label>
-          {labelName}
-          <RequirimentStyle>*</RequirimentStyle>
-        </Label>
-        <Input />
-        <ErrorMessage>{errorMessage}</ErrorMessage>
-      </>
-    );
-  };
-        
-        
-        */
-}

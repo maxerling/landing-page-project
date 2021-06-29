@@ -18,15 +18,6 @@ const LinkItem = styled.li`
   justify-content: center;
 `;
 
-const Link2 = styled.a`
-  text-decoration: none;
-  color: #000;
-  transition: 0.3s;
-  &:hover {
-    opacity: 0.5;
-  }
-`;
-
 const AnchorLinkStyled = styled(AnchorLink)`
   text-decoration: none;
   color: #000;
