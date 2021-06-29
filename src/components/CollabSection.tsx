@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo1 from "../imgs/companies/logo1.png";
+import logo1 from "../imgs/companies/inc.png";
 
 interface CollabSectionProps {}
 
@@ -39,7 +39,6 @@ const CompanyLogo = styled.img`
   display: flex;
   flex-direction: row;
 
-  height: 10em;
   opacity: 0.4;
   margin: 1em;
   @media (min-width: 959px) {
