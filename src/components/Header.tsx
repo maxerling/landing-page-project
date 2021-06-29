@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <HeaderWrapper>
       <LeftSection>
-        <a href="#">
+        <a href="/">
           <Logo src={logob}></Logo>
         </a>
       </LeftSection>
