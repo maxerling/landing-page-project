@@ -10,7 +10,7 @@ import {
 
 interface ContentProps {}
 
-export const Content: React.FC<ContentProps> = ({}) => {
+export const Content: React.FC<ContentProps> = () => {
   return (
     <>
       <CTASection />

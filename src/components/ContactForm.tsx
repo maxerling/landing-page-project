@@ -3,7 +3,7 @@ import { useForm, ValidationError } from "@formspree/react";
 
 interface ContactFormProps {}
 
-export const ContactForm: React.FC<ContactFormProps> = ({}) => {
+export const ContactForm: React.FC<ContactFormProps> = () => {
   const [state, handleSubmit] = useForm("xayabqdl");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;

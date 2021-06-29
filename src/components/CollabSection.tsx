@@ -56,7 +56,7 @@ const CompanyLogo = styled.img`
   }
 `;
 
-export const CollabSection: React.FC<CollabSectionProps> = ({}) => {
+export const CollabSection: React.FC<CollabSectionProps> = () => {
   return (
     <ContentWrapper>
       <Content>

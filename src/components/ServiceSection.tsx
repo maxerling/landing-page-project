@@ -49,7 +49,7 @@ const ServiceText = styled.p`
   }
 `;
 
-export const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
+export const ServiceSection: React.FC<ServiceSectionProps> = () => {
   return (
     <ContentWrapper id="services">
       <HeaderText>Tjänster</HeaderText>

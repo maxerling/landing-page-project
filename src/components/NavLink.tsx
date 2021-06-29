@@ -36,7 +36,7 @@ const AnchorLinkStyled = styled(AnchorLink)`
   }
 `;
 
-export const NavLink: React.FC<NavLinkProps> = ({}) => {
+export const NavLink: React.FC<NavLinkProps> = () => {
   return (
     <NavLinkContainer>
       <LinkWrapper>

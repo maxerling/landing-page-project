@@ -168,7 +168,7 @@ type FormData = {
   message: string;
 };
 
-export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
+export const ContactSection: React.FC<ContactSectionProps> = () => {
   const {
     register,
     handleSubmit,

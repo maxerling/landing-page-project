@@ -32,7 +32,7 @@ const Text = styled.p`
   }
 `;
 
-export const AboutSection: React.FC<AboutSectionProps> = ({}) => {
+export const AboutSection: React.FC<AboutSectionProps> = () => {
   return (
     <ContentWrapper id="about">
       <HeaderText>Om Oss</HeaderText>

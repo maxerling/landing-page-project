@@ -87,7 +87,7 @@ const FooterImage = styled.img`
   }
 `;
 
-export const Footer: React.FC<FooterProps> = ({}) => {
+export const Footer: React.FC<FooterProps> = () => {
   return (
     <FooterWrapper>
       <FooterContent>

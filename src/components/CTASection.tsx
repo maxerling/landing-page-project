@@ -144,9 +144,7 @@ const AnchorLinkStyled = styled(AnchorLink)`
   text-decoration: none;
 `;
 
-//const AnchorLink = styled.a``;
-
-export const CTASection: React.FC<CTASectionProps> = ({}) => {
+export const CTASection: React.FC<CTASectionProps> = () => {
   return (
     <ContentWrapper>
       <MainContent>

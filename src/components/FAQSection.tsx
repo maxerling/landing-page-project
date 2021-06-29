@@ -66,7 +66,7 @@ const FAQA = styled.div`
   }
 `;
 
-export const FAQSection: React.FC<FAQSectionProps> = ({}) => {
+export const FAQSection: React.FC<FAQSectionProps> = () => {
   const questions = [
     {
       question: "Hur kontaktar jag er?",

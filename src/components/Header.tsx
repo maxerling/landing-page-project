@@ -43,7 +43,7 @@ const Logo = styled.img`
     transform: scale(1.1);
   }
 `;
-export const Header: React.FC<HeaderProps> = ({}) => {
+export const Header: React.FC<HeaderProps> = () => {
   return (
     <HeaderWrapper>
       <LeftSection>
