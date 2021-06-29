@@ -8,7 +8,7 @@ const FooterWrapper = styled.div`
   display: flex;
   width: 100%;
   background-color: #2e2e2e;
-  height: 14em;
+  height: 15em;
 
   @media (min-width: 500px) {
     height: 16.5em;

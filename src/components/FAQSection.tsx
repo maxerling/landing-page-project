@@ -7,7 +7,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
-  padding: 0 0 70px 0;
+  padding: 0 0 20em 0;
   text-align: center;
   justify-content: center;
 `;
