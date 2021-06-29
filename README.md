@@ -50,7 +50,7 @@ I would say I'm overall happy with the end result. Of course improvements can be
 
 ### Final Take Aways
 
-I'm most happy with the simple logo decide that I made, really feel like it encapsulate the company in a very simple way and how I made the main description into just a few words.
+I'm most happy with the simple logo decide that I made, really feelt like it encapsulate the company in a very simple way and how I made the main description into just a few words.
 
 Probably would add functinality to 'Tjänster' were you can get a description of each service when you click on it. Evalute the color scheme and maybe change that, especially 'Kontakta Oss' which has 4 colors right now. 
 
