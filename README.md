@@ -26,9 +26,9 @@ After that I decided to inspect the website to get the key components:
 I decided to inspect other websites to get a better understanding what could be added to the website, some key takeaways was:
 
 * Comanpy collaboration
-    Reason: Show seriouness of the company, if you have the option always a good idea to show previous work. 
+Reason: Show seriouness of the company, if you have the option always a good idea to show previous work. 
 * FAQ section
-    Reason: Section that may be the deciding factor if the person decide to get help from the company. An easy way to get an answer without being     forced to contact and wait for an answer.
+Reason: Section that may be the deciding factor if the person decide to get help from the company. An easy way to get an answer without being     forced to contact and wait for an answer.
 
 
   
