@@ -70,6 +70,13 @@ small, .text_small {font-size: 0.833rem;}
   background-clip: content-box;
 }
 
+.open {
+
+  opacity: 1;
+  max-height: 13em;
+
+}
+
 `;
 
 export { GlobalStyles };

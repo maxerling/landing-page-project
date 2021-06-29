@@ -14,7 +14,7 @@ export const Content: React.FC<ContentProps> = ({}) => {
   return (
     <>
       <CTASection />
-      {/*<CollabSection />*/}
+      <CollabSection />
       <ServiceSection />
       <AboutSection />
       <ContactSection />

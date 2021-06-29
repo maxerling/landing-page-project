@@ -8,6 +8,8 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   background-color: #fff;
   padding: 0 0 70px 0;
+  text-align: center;
+  justify-content: center;
 `;
 
 const HeaderText = styled.h1`
@@ -24,30 +26,44 @@ const FAQ = styled.div`
   border: 2px solid;
   justify-content: center;
   flex-direction: wrap;
-  width: 100%;
+  width: 60%;
   padding: 1em;
   margin: 1em;
+
+  @media (min-width: 1440px) {
+    width: 50%;
+  }
 `;
+
 const FAQQ = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 1.563rem;
   font-weight: 600;
-
+  cursor: pointer;
+  font-size: 1.25rem;
   &:active {
     content: "";
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.563rem;
   }
 `;
 
 const FAQA = styled.div`
   display: flex;
+  font-size: 1rem;
   width: 100%;
   justify-content: center;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
+
+  @media (min-width: 1024px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const FAQSection: React.FC<FAQSectionProps> = ({}) => {
@@ -86,7 +102,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({}) => {
       {faqs.map((faq: any, i: number) => (
         <FAQ className={faq.open ? "open" : ""} onClick={() => toogleFAQ(i)}>
           <FAQQ>{faq.question}</FAQQ>
-          <FAQA>{faq.answer}</FAQA>
+          <FAQA className={faq.open ? "open" : ""}>{faq.answer}</FAQA>
         </FAQ>
       ))}
     </ContentWrapper>
