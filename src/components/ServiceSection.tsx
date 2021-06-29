@@ -48,7 +48,7 @@ const ServiceText = styled.p`
     box-shadow: -12px 5px 0px 3px;
   }
 `;
-//flex: 1 0 21%; /* explanation below */
+
 export const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
   return (
     <ContentWrapper id="services">

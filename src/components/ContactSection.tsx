@@ -175,7 +175,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({}) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
-  const onSubmit = (data: object) => console.log(data);
+  const onSubmit = (data: object) => window.location.reload();
 
   return (
     <ContentWrapper id="contact">
