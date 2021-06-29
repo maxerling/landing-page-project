@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useForm, NestedValue } from "react-hook-form";
-import { ContactForm } from ".";
+import { useForm } from "react-hook-form";
 
 interface ContactSectionProps {}
 
