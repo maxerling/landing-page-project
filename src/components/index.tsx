@@ -8,4 +8,3 @@ export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";
 export { Header } from "./Header";
 export { Content } from "./Content";
-export { ContactForm } from "./ContactForm";
