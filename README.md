@@ -58,7 +58,7 @@ Probably would add functinality to 'Tjänster' were you can get a description of
 
 Change 'Om Oss' by adding more content, something similar to the Figma description.
 
-For future frontend projects I will start off with focusing on design principles and get a better understanding of that.
+For future frontend projects I will start off with focusing on design principles and get a better understanding of that. Probably add a theme component with all design choices from the start.
 
 Overall I'm happy and proud of myself.
 
