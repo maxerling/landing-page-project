@@ -33,7 +33,9 @@ Reason: Show seriouness of the company, if you have the option always a good ide
 
 Reason: Section that may be the deciding factor if the person decide to get help from the company. An easy way to get an answer without being     forced to contact and wait for an answer.
 
+* Contact form
 
+Reason: You wanna make it accessibile as possible for future customers to contact you. Instead of needing to copy-paste the e-mail or call the company. You contact them within a few seconds directly from the page.
   
 
 # Starting The Project
