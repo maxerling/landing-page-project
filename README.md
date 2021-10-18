@@ -35,7 +35,7 @@ Reason: Section that may be the deciding factor if the person decide to get help
 
 * Contact form
 
-Reason: You wanna make it accessibile as possible for future customers to contact you. Instead of needing to copy-paste the e-mail or call the company. You contact them within a few seconds directly from the page.
+Reason: You wanna make it as accessibile as possible for future customers to contact you. Instead of needing to copy-paste the e-mail or call the company. You contact them within a few seconds directly from the page. Increase customer retention.
   
 
 # Starting The Project
