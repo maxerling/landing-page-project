@@ -46,7 +46,7 @@ I decided to re-create the project with Figma combined with looking up tutorials
 
 https://www.figma.com/file/KV6fFRi54cPMudwbYXjlkA/Untitled?node-id=30%3A0
 
-I would say I'm overall happy with the end result. Of course improvements can be made.
+I would say I'm overall happy with the end result.
 
 ### Final Take Aways
 
@@ -56,7 +56,7 @@ Probably would add functinality to 'Tjänster' were you can get a description of
 
 Change 'Om Oss' by adding more content, something similar to the Figma description.
 
-When it comes to future projects I'm planning on trying Bulma or Tailwind CSS to see if it will make the styling part easier and more coherent.
+For future frontend projects I will start off with focusing on design principles and get a better understanding of that.
 
 Overall I'm happy and proud of myself.
 
